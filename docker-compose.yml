@@ -28,7 +28,8 @@ services:
             postgres:
                 condition: service_healthy
         volumes:
-            - ./workspace:/usr/src/app/workspace:rw
+            - gpt_pilot_pg_workspace:/usr/src/app/workspace:rw
+            - ./workspace:/usr/src/app/workspace:ro
 
     postgres:
         image: postgres
@@ -49,3 +50,4 @@ services:
 
 volumes:
     gpt_pilot_pg_data:
+    gpt_pilot_pg_workspace:
