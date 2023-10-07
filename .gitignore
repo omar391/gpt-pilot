@@ -169,3 +169,4 @@ cython_debug/
 # workspace
 workspace
 pilot-env/
+.history/*
