@@ -4,7 +4,7 @@ services:
         environment:
             #OPENAI or AZURE
             - ENDPOINT=OPENAI
-            - OPENAI_API_KEY=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
+            - OPENAI_API_KEY=${OPENAI_API_KEY}
             # - AZURE_API_KEY=
             # - AZURE_ENDPOINT=
             #In case of Azure endpoint, change this to your deployed model name
